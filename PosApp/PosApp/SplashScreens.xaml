@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfPosApp.Splash"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPosApp"
+        mc:Ignorable="d"
+        Height="450" Width="800" WindowStyle="None" WindowState="Normal" ResizeMode="CanResize" AllowsTransparency="True" WindowStartupLocation="CenterScreen" Background="Transparent">
+
+    <Grid>
+        <Border CornerRadius="10" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Border.Background>
+                <ImageBrush ImageSource="https://i.ibb.co/MZx23YY/bg.png" Stretch="UniformToFill"/>
+            </Border.Background>
+            <Border Margin="0,0,400,0" CornerRadius="10, 0, 0, 10" Background="#005E80FB" />
+        </Border>
+        <ProgressBar Minimum="0" Maximum="100" 
+                     Value="{Binding WorkerState}" Background="White" Margin="226,340,226,101" Height="7">
+        </ProgressBar>
+        <Border x:Name="logoBorder" Visibility="Visible" VerticalAlignment="Bottom"  Height="113" BorderBrush="#FFC7C7C7" BorderThickness="0" CornerRadius="0,0,0,0" Margin="254,0,256,152">
+            <Border.Background>
+                <ImageBrush x:Name="logoBox" ImageSource="https://i.ibb.co/Xph0kfF/bigLogo.png" Stretch="UniformToFill" />
+            </Border.Background>
+        </Border>
+    </Grid>
+</Window>
